@@ -29,7 +29,7 @@ const About: React.FC = () => {
         {/* Right Section */}
         <div className="about-image">
           <img
-            src="images/about.avif"
+            src="kerrtisy/images/about.avif"
             alt="Man standing on artwork"
           />
         </div>
