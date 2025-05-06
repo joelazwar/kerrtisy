@@ -1,0 +1,40 @@
+/* Add fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Slight upward motion */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply fade-in animation to the container */
+.wip-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Styling for the title */
+.wip-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: Eurostile MN, sans-serif;
+}
+
+/* Styling for the message */
+.wip-message {
+  font-size: 1rem;
+  opacity: 0.8;
+  font-family: 'Euclid Circular A', sans-serif;
+  font-weight: 200;
+}

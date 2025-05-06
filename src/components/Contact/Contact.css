@@ -1,14 +1,26 @@
-/* Container layout */
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 100vh;
-    padding: 0 20%;
-    background-color: black;
-    color: white;
+/* Add fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Slight upward motion */
   }
-  
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply fade-in animation to the container */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 0 20%;
+  background-color: black;
+  color: white;
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
   /* Left Section */
   .contact-info {
     flex: 1;

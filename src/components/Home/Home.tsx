@@ -1,15 +1,14 @@
 import React from 'react';
 import './Home.css';
+import { NavLink } from 'react-router-dom';
 
 const MainContent: React.FC = () => {
   return (
     <main className="main-content">
-      {/* Centered Container */}
       <div className="button-container">
-        {/* Example Buttons */}
-        <button className="main-button">Recent Work</button>
-        <button className="main-button">Shop</button>
-        <button className="main-button">Contact</button>
+        <NavLink to="/recent-work" className="main-button">Recent Work</NavLink>
+        <NavLink to="https://kerrtisy.shop/" className="main-button">Shop</NavLink>
+        <NavLink to="/contact" className="main-button">Contact</NavLink>
       </div>
     </main>
   );

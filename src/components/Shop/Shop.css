@@ -1,24 +1,25 @@
 /* Add fade-in animation */
 @keyframes fadeIn {
-  from {
-      opacity: 0;
-      transform: translateY(20px); /* Optional: Slight upward motion */
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Slight upward motion */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
   }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
 
-.main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  background-color: black; /* Matches the background */
-  animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
-}
-  
+  .shop-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: black; /* Matches the background */
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  }
+
+    
   .button-container {
     display: flex;
     flex-direction: column;

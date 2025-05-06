@@ -1,12 +1,26 @@
-.about-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80vh; /* Full viewport height */
-    padding: 0 20%; /* Add some padding on the sides */
-    color: white;
-    background-color: black;
+/* Add fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Slight upward motion */
   }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply fade-in animation to the container */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  padding: 0 15%;
+  color: white;
+  background-color: black;
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
   
   .about-text {
     flex: 1;
