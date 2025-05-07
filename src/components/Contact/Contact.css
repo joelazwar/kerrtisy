@@ -16,7 +16,6 @@
   justify-content: space-between;
   align-items: flex-start;
   height: 100vh;
-  padding: 0 20%;
   background-color: black;
   color: white;
   animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
@@ -82,7 +81,7 @@
     resize: none;
   }
   
-  button {
+  .submit-button {
     background-color: green;
     color: white;
     border: none;
@@ -94,6 +93,6 @@
     font-family: Eurostile MN, sans-serif;
   }
   
-  button:hover {
+  .submit-button:hover {
     background-color: darkgreen;
   }

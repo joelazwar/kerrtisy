@@ -1,0 +1,15 @@
+.main-ctr{
+    padding:0 15%;
+}
+
+@media (max-width:1200px){
+    .main-ctr{
+        padding:0 10%;
+    }
+}
+
+@media (max-width:900px){
+    .main-ctr{
+        padding:0 5%;
+    }
+}

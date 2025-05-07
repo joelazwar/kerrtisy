@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
           <label htmlFor="message">Message *</label>
           <textarea id="message" name="message" required />
 
-          <button type="submit">Submit</button>
+          <button className="submit-button" type="submit">Submit</button>
         </form>
       </div>
     </div>
