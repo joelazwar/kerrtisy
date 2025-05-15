@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import './Layout.css';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -9,9 +8,9 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <div className="flex flex-col min-h-screen bg-black text-white font-euclid">
       <Header />
-      <main className="main-ctr">{children}</main>
+      <main className="flex-1 flex flex-col justify-center xl:px-[15%] lg:px-[10%] md:px-[7%] px-[2%] overflow-scroll sm:overflow-auto pb-28 min-h-[80vh]">{children}</main>
       <Footer />
     </div>
   );

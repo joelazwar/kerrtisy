@@ -7,7 +7,6 @@ import Contact from './components/Contact/Contact';
 import WorkInProgress from './components/WIP/WIP';
 import Shop from './components/Shop/Shop';
 import NotFound from './components/NotFound/NotFound';
-import './styles/App.css';
 
 const App: React.FC = () => {
   return (
